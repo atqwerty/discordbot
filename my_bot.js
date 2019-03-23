@@ -8,8 +8,11 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content.includes("!ping")) {
+        var i;
         user = message.mentions.users.first();
-        message.channel.send('look over here ' + user);
+        for(i = 0; i < 10; i++){
+            message.channel.send('look over here ' + user);
+        }
     }
 });
 // THIS  MUST  BE  THIS  WAY
