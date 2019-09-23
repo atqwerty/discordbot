@@ -14,9 +14,9 @@ client.on('message', message => {
       message.channel.send('look over here ' + user)
     }
   } else if (message.content.includes('!r')) {
-    var i
-    for (i = 0; i < 18; i++) {
-      message.channel.send('$m')
+    var j
+    for (j = 0; j < 18; j++) {
+      setTimeout(() => message.channel.send('$m'), 1000)
     }
   }
 })
